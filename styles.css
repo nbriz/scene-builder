@@ -1,0 +1,112 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  font-family: monospace;
+}
+
+input, select, button {
+  border: 1px solid white;
+  background: transparent;
+  color: #fff;
+  padding: 8px 16px;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:hover {
+  background: #fff;
+  color: #000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  min-width: 230px;
+}
+
+nav > span {
+  opacity: 0.5
+}
+
+nav > span:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+hr {
+  border: none;
+  border-bottom: 1px solid rgba(255,255,255,0.25);
+  margin: 13px 0px;
+}
+
+#background-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-attachment: fixed;
+}
+
+#main-menu {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+  background: rgba(0,0,0,0.5);
+  padding: 20px;
+  color: white;
+}
+
+#main-menu:hover {
+  background: rgba(0,0,0,1);
+}
+
+#background-settings,
+#items-settings,
+#file-settings {
+  display: none;
+}
+
+
+.css-row {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0px;
+}
+
+#island {
+  width: 110px;
+}
+
+#scene-name {
+  width: 95px;
+}
+
+#scene-items {
+  width: 166px;
+}
+
+#context-menu {
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+}
+
+#context-menu > div {
+  border: 1px solid white;
+  background: transparent;
+  color: #fff;
+  padding: 8px 16px;
+}
+
+#context-menu > div:hover {
+  background: rgba(255,255,255,1);
+  color: #000;
+  cursor: pointer;
+}

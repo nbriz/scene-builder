@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Haven Scene Builder</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta content='width=device-width, initial-scale=1' name='viewport'/>
+  </head>
+  <body>
+
+    <div id="background-container"></div>
+
+    <div id="main-menu">
+      <nav>
+        <span data-menu="file-settings">scene</span>
+        <span data-menu="background-settings">background</span>
+        <span data-menu="items-settings">items</span>
+      </nav>
+      <div id="file-settings">
+        <hr>
+        <input type="file" id="zip-input" accept=".zip" style="display: none;">
+        <button id="custom-zip-button">open</button> |
+        <button id="download">save</button>
+        <select id="island"></select>
+        <input type="text" id="scene-name" placeholder="scene-name">
+      </div>
+      <div id="background-settings">
+        <hr>
+        <input type="file" id="bg-input" accept="image/*" style="display: none;">
+        <button id="custom-bg-button">upload background image</button> |
+        <button id="delete-background">remove background image</button>
+      </div>
+      <div id="items-settings">
+        <hr>
+        <input type="file" id="items-input" accept="image/*" style="display: none;" multiple>
+        <button id="custom-items-button">add items</button> |
+        <button id="delete-item">delete item</button>
+        <select id="scene-items"></select>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
+    <script src="SceneItem.js"></script>
+    <script src="zip-utils.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
